@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2d3af104b4f046ac8514e78536113cee" Name="Diagram1" ZoomLevel="101">
+        <EntityTypeShape EntityType="Model.UserClaims" Width="1.5" PointX="5.25" PointY="4.625" />
+        <EntityTypeShape EntityType="Model.UserLogins" Width="1.5" PointX="5.25" PointY="7.375" />
+        <EntityTypeShape EntityType="Model.UserRoles" Width="1.5" PointX="0.75" PointY="5.5" />
+        <EntityTypeShape EntityType="Model.Users" Width="1.5" PointX="3" PointY="1.375" />
+        <AssociationConnector Association="Model.FK_UserClaims_Users" />
+        <AssociationConnector Association="Model.FK_UserLogins_Users" />
+        <AssociationConnector Association="Model.UsersInRoles" />
+        <EntityTypeShape EntityType="Model.Actions" Width="1.5" PointX="7.75" PointY="7.75" />
+        <EntityTypeShape EntityType="Model.UserRolesInActions" Width="1.5" PointX="3" PointY="9.875" />
+        <AssociationConnector Association="Model.FK_UserRolesInActions_UserRoles" />
+        <EntityTypeShape EntityType="Model.Logs" Width="1.5" PointX="5.25" PointY="1.375" />
+        <AssociationConnector Association="Model.FK_Logs_Users" />
+        <EntityTypeShape EntityType="Model.Barangays" Width="1.5" PointX="12.25" PointY="1.125" />
+        <EntityTypeShape EntityType="Model.Patients" Width="1.5" PointX="10.375" PointY="7.75" />
+        <EntityTypeShape EntityType="Model.Provinces1" Width="1.5" PointX="5.375" PointY="11.125" />
+        <EntityTypeShape EntityType="Model.Towns1" Width="1.5" PointX="7.625" PointY="10.875" />
+        <AssociationConnector Association="Model.FK_Barangays_Towns1" />
+        <AssociationConnector Association="Model.FK_Towns_Towns1" />
+        <EntityTypeShape EntityType="Model.MedicalRecords" Width="1.5" PointX="7.375" PointY="0.75" />
+        <EntityTypeShape EntityType="Model.Owners" Width="1.5" PointX="8.125" PointY="4" />
+        <AssociationConnector Association="Model.FK_Patients_Owners" />
+        <EntityTypeShape EntityType="Model.Veterinaries" Width="1.5" PointX="10.375" PointY="4.375" />
+        <EntityTypeShape EntityType="Model.ConfinementRecords" Width="1.5" PointX="5.25" PointY="13.875" />
+        <AssociationConnector Association="Model.FK_ConfinmentRecords_Users" />
+        <AssociationConnector Association="Model.FK_ConfinementRecords_Owners" />
+        <AssociationConnector Association="Model.FK_ConfinementRecords_Patients" />
+        <AssociationConnector Association="Model.FK_ConfinementRecords_Veterinaries" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
